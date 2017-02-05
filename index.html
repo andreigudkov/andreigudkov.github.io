@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Andrei Gudkov</title>
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.2;
+        max-width: 800px;
+        margin: 5px auto;
+        background-color: rgb(243,243,243);
+        color: rgb(34,34,34);
+        line-height:24px;
+        padding-bottom:20px;
+      }
+      a {
+        color:#0020c5;
+        text-decoration: underline;
+      }
+      a:hover {
+       text-decoration: none;
+       border-bottom: none;
+      }
+      p {
+        margin: 0.5em 0;
+      }
+      p:first-child {
+        margin-top : 0;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+      .section {
+        background-color: white;
+        padding: 0.5em;
+        border: 1px solid #ccc;
+      }
+      .section + .section {
+        margin-top: 1em;
+      }
+      .enum {
+        margin-left: 1em;
+      }
+      .info {
+        font-size: 90%;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #167c80;
+        color: white;
+        margin-bottom: 1em;
+        padding: 0 5px;
+      }
+      .header div:first-child {
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: -1px;
+        line-height: 42px;
+      }
+      .header div:last-child {
+        font-weight: bold;
+        align-self: center;
+      }
+      .header a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='header'>
+      <div>Andrei Gudkov</div>
+      <div><a href='cv/'>About me</a></div>
+    </div>
+
+    <div class='section'>
+      <p><b>Linux tools</b></p>
+      <div class='enum'>
+        <p><a href="lxcdeb/">Setting up LXC on Debian desktop</a><span class='info'>, 2019</span></p>
+        <p><a href="codesearch/">Linux power tools: get and search source code in two minutes</a><span class='info'>, 2019</span></p>
+      </div>
+    </div>
+
+    <div class='section'>
+      <p><b>String algorithms</b></p>
+      <div class='enum'>
+        <p><a href="minhash1/">Efficient implementation of MinHash, part 1</a><span class='info'>, 2019</span></p>
+        <p><a href="bm/">Rationale behind Boyer-Moore algorithm</a><span class='info'>, 2018</span></p>
+      </div>
+    </div>
+
+    <div class='section'>
+      <p><b><a href="tcp/">Common pitfalls of using TCP</a></b><span class='info'>, 2019</span></p>
+      <p>Connect timeouts, buffer sizes, ephemeral ports.</p>
+    </div>
+
+    <div class='section'>
+      <p><b><a href="thumbnail/">Guide to making high-quality thumbnails</a></b><span class='info'>, 2019</span></p>
+      <p>Multistep scaling, unsharp masking, HiDPI.</p>
+    </div>
+
+    <div class='section'>
+      <p><b><a href="inline/">Dangers of linking inline functions</a></b><span class='info'>, 2018</span></p>
+      <p>The worst thing that can happen: wrong function body is called.</p>
+    </div>
+
+    <div class='section'>
+      <p><b>Advanced Hadoop topics</b></p>
+      <p>Let's solve some real-world problems and see why by-the-book solutions do not work and how to fix this.</p>
+      <div class='enum'>
+        <p><a href="ph/ep1-join/">Practical Hadoop, episode 1: JOIN</a><span class='info'>, 2017</span></p>
+        <p><a href="ph/ep2-select/">Practical Hadoop, episode 2: SELECT</a><span class='info'>, 2017</span></p>
+        <p><a href="ph/ep3-stability/">Practical Hadoop, episode 3: Towards Stability</a><span class='info'>, 2018</span></p>
+        <p><a href="ph/ep4-faq/">Practical Hadoop: FAQ</a><span class='info'>, 2019</span></p>
+      </div>
+    </div>
+
+    <div class='section'>
+      <p><b>Project organization</b></p>
+      <div class='enum'>
+        <p><a href="smine/">Why skill match is not enough</a><span class='info'>, 2017</span></p>
+        <p><a href="srvsup/">Server-side programmers should support their software themselves</a><span class='info'>, 2017</span></p>
+        <p><a href="scrumdysf/">Scrum dysfunction</a><span class='info'>, 2017</span></p>
+      </div>
+    </div>
+
+    <div class='section'>
+      <p><b><a href="sspar/">Storage subsystem performance: analysis and recipes</a></b><span class='info'>, 2016</span></p>
+      <p>Long-read about storage subsystem, with images!</p>
+      <p>Article provides overall coverage of storage subsystem with main focus on performance.
+      It is split into theoretical and practical parts.
+      Theoretical part is dedicated to the components of IO stack with particular attention 
+      to modern data storage devices: HDD and SSD.
+      Theory of operation provides the basis for explaining performance advantages and limitations 
+      of corresponding device; real-world test results are included as well.
+      Practical part lists various methods of performance improvement and also gives hands-on advices 
+      about everyday tasks.
+      Reader is expected to have previous experience of programming and system administration in Linux environment.</p>
+      <p>Supplementary benchmarking tool: <a href='https://github.com/andreigudkov/drvperf'>drvperf</a></p>
+    </div>
+
+  </body>
+</html>
+

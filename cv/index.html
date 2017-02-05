@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Andrei Gudkov</title>
+<style>
+  body {
+    max-width: 700px;
+    margin: 1em auto;
+    font-size: 16px;
+    font-family: Arial, helvetica, sans-serif;
+    line-height: 1.2;
+    color: rgb(50, 50, 50);
+  }
+  td {
+    padding: 0;
+  }
+  h2 {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+  }
+  a {
+    text-decoration: underline;
+    color: rgb(50, 50, 50);
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2em;
+    padding-left: 0;
+  }
+  ul > li {
+    list-style-type: square;
+    margin-bottom: 0.1em;
+  }
+  .dontbreak {
+    /*page-break-inside: avoid;*/
+  }
+
+  .stretch {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+  }
+  .stretch td:first-child {
+    text-align: left;
+    vertical-align: middle;
+  }
+  .stretch td:last-child {
+    text-align: right;
+    vertical-align: middle;
+  }
+
+  .position {
+    font-weight: bold;
+    font-size: 110%;
+  }
+  .period {
+    font-size: 80%;
+  }
+  .company {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  .header {
+    margin-bottom: 0.2em;
+    margin-top: 1em;
+  }
+  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .summary {
+    border-top: 1px solid transparent;
+    margin: 0.8em 0 1em 0;
+  }
+
+  .skills, .toolset, .nonprod {
+    margin: 0.5em 0;
+  }
+
+  .headline h1 {
+    margin-top: 0;
+  }
+  .headline img {
+    width: 80px;
+    padding-right: 1.5em;
+  }
+  .contact-list {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 25px;
+    border-left: 2px solid #555555;
+    padding-left: 3px;
+    font-size: 15px;
+  }
+  .contact-item {
+    margin-top: 2px;
+  }
+</style>
+</head>
+
+
+<body>
+
+<div class='dontbreak'>
+  <table class='headline stretch'>
+    <tr>
+      <td>
+        <h1>Andrei Gudkov</h1>
+        <div><b>Software architect/researcher (C++/Java/Python, Hadoop/Spark, ML)</b></div>
+        <div class='contact-list'>
+          <div class='contact-item'>Email: <a href='mailto:gudokk@gmail.com'>gudokk@gmail.com</a></div>
+          <div class='contact-item'>Telegram: <a href='https://t.me/andrei_gudkov'>t.me/andrei_gudkov</a></div>
+          <div class='contact-item'>LinkedIn: <a href='https://www.linkedin.com/in/andrei-gudkov/'>linkedin.com/in/andrei-gudkov/</a></div>
+          <div class='contact-item'>Blog: <a href='https://gudok.xyz/'>gudok.xyz</a></div>
+        </div>
+      </td>
+      <td>
+      </td>
+    </tr>
+  </table>
+  <div class='summary'>
+    <p>I create high performance server and data analysis software.
+       My 10+ year experience includes full-text search engines (Go.Mail.Ru, Nigma),
+       hierarchical database (Deutsche Bank), a number of Silicon Valley startups.
+       I rely on the following tech stack: C++/Linux for performance-critical components,
+       Java/Hadoop/Spark for heavy dataflows, and Python for machine learning.
+     </p>
+     <p>Some examples of the projects which would be relevant to me:
+        search engines, database engines, text/image/video analysis,
+        CDNs, ad platforms, trading robots.
+        I prefer positions based on long-term commitment, ownership and research.
+        High-tech startups are welcome as well.
+     </p>
+     <p>I live in Moscow, Russia.
+        Both on-site and remote work (UTC+3) are possible.
+        Full time only.
+     </p>
+     <p><b>Important!</b>
+        Please, be sure to check my technical blog.
+        It demonstrates desired experience level and values by example.
+     </p>
+  </div>
+
+  <div class='skills'>
+    <b>Skills:</b>
+    big data, distributed computing, storage,
+    data mining, machine learning, 24x7 online services, full-text search,
+    web crawling, multithreading, vectorization, networking;
+    project ownership. 
+  </div>
+
+  <div class='toolset'>
+    <b>Toolset:</b>
+    <ul>
+      <li>C++, Boost, protobuf, rapidjson, OpenCV, libavcodec, flex, bison, x64/ARM SIMD,
+          arrow, parquet, roaring, openssl, cmake, gtest</li>
+      <li>Java, Hadoop, HBase, Spark, Kafka, nio, JNI, jdbc, fastutil, jetty</li>
+      <li>Python, NumPy, scikit, xgboost, TensorFlow, matplotlib</li>
+      <li>Linux A-Z</li>
+    </ul>
+  </div>
+
+  <div class='nonprod'>
+    Non-production experience: Altera Cyclone FPGA/SoC.
+  </div>
+
+</div>
+
+<div class='dontbreak'>
+  <h2>Experience</h2>
+  <table class='stretch header'>
+    <tr>
+      <td class='position'>Backend architect (remotely)</td>
+      <td class='period'>2015 September &mdash; ongoing</td>
+    </tr>
+  </table>
+  I work for bigdata and AI startups where I am responsible for core components.
+  Some interesting projects:
+  <div style='margin-top:0.5em;'>
+    <a href='https://light.house/'>Lighthouse AI</a> &mdash; smart security cameras with robust object recognition
+    <ul>
+      <li>Separate GPU nodes, data pipeline latency optimization,
+          audio subsystem, metrics collection/monitoring.</li>
+    </ul>
+  </div>
+  <div style='margin-top:0.5em;'>
+    <a href='http://dcengines.io/'>DCEngines</a> &mdash; low-level, distributed data store integrated with Apache Spark
+    <ul>
+      <li>String/substring indexes, parquet-based storage format,
+          cluster API, unit and integration testing frameworks.</li>
+    </ul>
+  </div>
+  <div style='margin-top:0.5em;'>
+    I also write job-related articles in my spare time (see my blog).
+  </div>
+</div>
+
+<div class='dontbreak'>
+  <table class='stretch header'>
+    <tr>
+      <td class='position'>Lead Software Development Engineer at Deutsche Bank</td>
+      <td class='period'>2013 November &mdash; 2015 June</td>
+    </tr>
+  </table>
+  <div class='company'>
+    Worked on hierarchical distributed database used for risk management.
+  </div>
+  <ul>
+    <li>Created embedded database client</li>
+    <li>Implemented a number of core features in a database, e.g. reference counting GC</li>
+    <li>Latency/throughput/memory optimization of everything at all levels</li>
+  </ul>
+</div>
+
+<div class='dontbreak'>
+  <table class='stretch header'>
+    <tr>
+      <td class='position'>Head of group of Vertical Searches at Mail.Ru Group</td>
+      <td class='period'>2011 September &mdash; 2013 June</td>
+    </tr>
+  </table>
+  <div class='company'>
+  Mail.Ru Group is the leading Internet company in Russia.
+  It operates public search engine <a href='https://go.mail.ru/'>go.mail.ru</a> among other services, 
+  which served 30 millions search queries daily as of 2013.
+  </div>
+  <ul>
+    <li>Was responsible for development of all vertical search services.
+        Worked in close collaboration with PM, colleagues from UI, QA, devops and other specialized groups.
+        Major group achievements:
+      <ul>
+        <li>Created news vertical (1000+ sources, clustering, historical data)</li>
+        <li>Created people search over 300 million social network profiles</li>
+        <li>Created brand new version of video search</li>
+        <li>Added 15+ types of non-organic results and rich snippets to web search: 
+            goods, images, maps, music, news, video, weather, etc</li>
+        <li>Created SERP construction layer. 
+            Acts as a single point of building final SERP from large number of downstream sources.</li>
+      </ul>
+    </li>
+    <li>Personally made further improvements to image search.
+        User session analysis. Centralized dataflow in hadoop.</li>
+    <li>Owned 100 online servers with highly heterogeneous roles</li>
+    <li>Led team of 7 top-quality developers, conducted technical interviews</li>
+    <li><a href='https://gudok.xyz/portfolio/index.html#gmr'>Product screenshots</a></li>
+  </ul>
+</div>
+
+<div class='dontbreak'>
+  <table class='stretch header'>
+    <tr>
+      <td class='position'>Software Developer at Mail.Ru Group</td>
+      <td class='period'>2010 September &mdash; 2011 August</td>
+    </tr>
+  </table>
+  <div class='company'>
+  Owned image search (2,000,000 queries daily).
+  </div>
+  <ul>
+    <li>Restored, significantly reworked and extended image search.
+    <li>Achieved big improvements in size (300M effective db size) and quality of the dataset,
+        ranking, latency, reliability, architecture (sharding, thumbnail caching).
+    </li>
+  </ul>
+</div>
+
+<div class='dontbreak'>
+  <table class='stretch header'>
+    <tr>
+      <td class='position'>Senior Software Developer at Nigma.Ru</td>
+      <td class='period'>2006 October &mdash; 2010 September</td>
+    </tr>
+  </table>
+  <div class='company'>
+  Nigma.Ru was a Russian metasearch engine with a variety of additional search and information services.
+  At its peak, it had 20 employees and processed 1% of search queries in Russia.
+  </div>
+  <ul>
+    <li>Created music search engine over audio files accessible on the web.
+        Complete dataflow and backend: robot, storage, indexer, ranker, search engine.
+        Crawl set of 1 bln urls.
+    </li>
+    <li>Created bittorrent search.
+    <li>Created set of components reused by adjacent projects: robots, parsers, full-text search engine</li>
+    <li>Led team of 3 developers, conducted technical interviews (devs and sysadmins)</li>
+    <li><a href='https://gudok.xyz/portfolio/index.html#ngm'>Product screenshots</a></li>
+  </ul>
+</div>
+
+<div class='dontbreak'>
+  <h2>Education</h2>
+  <table class='stretch header'>
+    <tr>
+      <td class='position'>Moscow State University</td>
+      <td class='period'>2004 &mdash; 2009</td>
+    </tr>
+  </table>
+  Faculty of Computational Mathematics and Cybernetics
+  <br/>University degree (5 years)
+</div>
+
+</body>
+<html>
+
