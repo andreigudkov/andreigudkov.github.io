@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os
 import sys
@@ -35,10 +35,13 @@ for item in gen_urllist('./'):
   xmlUrl.append(xmlLastmod)
 
   xmlUrlset.append(xmlUrl)
-  print item['url']
+  print(item['url'])
+
+
 
 
 sitemap = etree.tostring(xmlUrlset, pretty_print=True, xml_declaration=True, encoding="UTF-8")
+sitemap = str(sitemap, encoding='UTF-8')
 
 f = codecs.open("sitemap.xml", "w", "utf-8-sig")
 f.write(sitemap)
