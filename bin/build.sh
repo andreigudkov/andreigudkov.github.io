@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -u
 set -e
 set -o pipefail
 
@@ -21,7 +22,10 @@ rsync -av --delete ~/GIT/articles/codesearch/mastercopy/ codesearch/
 rsync -av --delete ~/GIT/articles/sim/minhash1/mastercopy/ minhash1/
 rsync -av --delete ~/GIT/articles/lxcdeb/mastercopy/ lxcdeb/
 rsync -av --delete ~/GIT/articles/mlp/mastercopy/ mlp/
+rsync -av --delete ~/GIT/articles/transpose/mastercopy/ transpose/
 bin/sitemap.py
 
-rsync -av --delete --exclude="/.git" ./ /var/www/gudok.xyz/
+#rsync -av --delete --exclude="/.git" ./ /var/www/gudok.xyz/
+
+echo 'SUCCESS'
 
