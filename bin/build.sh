@@ -4,8 +4,8 @@ set -e
 set -o pipefail
 
 mkdir -p cv ph
-rsync -av ~/SVN/cv/andrei_gudkov.html cv/index.html
-rsync -av --delete ~/SVN/cv/portfolio/ portfolio/
+rsync -av ~/GIT/zadvorki/cv/andrei_gudkov.html cv/index.html
+rsync -av --delete ~/GIT/zadvorki/cv/portfolio/ portfolio/
 rsync -av --delete ~/GIT/articles/sspar/mastercopy/ sspar/
 rsync -av --delete ~/GIT/articles/smine/mastercopy/ smine/
 rsync -av --delete ~/GIT/articles/srvsup/mastercopy/ srvsup/
@@ -23,9 +23,8 @@ rsync -av --delete ~/GIT/articles/sim/minhash1/mastercopy/ minhash1/
 rsync -av --delete ~/GIT/articles/lxcdeb/mastercopy/ lxcdeb/
 rsync -av --delete ~/GIT/articles/mlp/mastercopy/ mlp/
 rsync -av --delete ~/GIT/articles/transpose/mastercopy/ transpose/
+rsync -av --delete ~/GIT/articles/partition/mastercopy/ partition/
 bin/sitemap.py
-
-#rsync -av --delete --exclude="/.git" ./ /var/www/gudok.xyz/
 
 echo 'SUCCESS'
 
