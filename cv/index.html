@@ -8,7 +8,7 @@
 <title>Andrei Gudkov</title>
 <style>
   body {
-    max-width: 700px;
+    max-width: 720px;
     margin: 1em auto;
     font-size: 16px;
     font-family: Arial, helvetica, sans-serif;
@@ -88,7 +88,7 @@
     margin: 0.8em 0 1em 0;
   }
 
-  .skills, .toolset, .nonprod {
+  .skills, .toolset {
     margin: 0.5em 0;
   }
 
@@ -113,7 +113,6 @@
 </style>
 </head>
 
-
 <body>
 
 <div class='dontbreak'>
@@ -121,12 +120,13 @@
     <tr>
       <td>
         <h1>Andrei Gudkov</h1>
-        <div><b>Software architect/researcher (C++/Java/Python, Hadoop/Spark, ML)</b></div>
+        <div><b>Software architect/researcher</b></div>
+        <div><small>Location: Moscow, Russia</small></div>
         <div class='contact-list'>
           <div class='contact-item'>Email: <a href='mailto:gudokk@gmail.com'>gudokk@gmail.com</a></div>
           <div class='contact-item'>Telegram: <a href='https://t.me/andrei_gudkov'>t.me/andrei_gudkov</a></div>
           <div class='contact-item'>LinkedIn: <a href='https://www.linkedin.com/in/andrei-gudkov/'>linkedin.com/in/andrei-gudkov/</a></div>
-          <div class='contact-item'>Blog: <a href='https://gudok.xyz/'>gudok.xyz</a></div>
+          <div class='contact-item'>Technical blog: <a href='https://gudok.xyz/'>gudok.xyz</a></div>
         </div>
       </td>
       <td>
@@ -134,79 +134,93 @@
     </tr>
   </table>
   <div class='summary'>
-    <p>I create high performance server and data analysis software.
-       My 10+ year experience includes full-text search engines (Go.Mail.Ru, Nigma),
-       hierarchical database (Deutsche Bank), a number of Silicon Valley startups.
-       I rely on the following tech stack: C++/Linux for performance-critical components,
-       Java/Hadoop/Spark for heavy dataflows, and Python for machine learning.
-     </p>
-     <p>Some examples of the projects which would be relevant to me:
-        search engines, database engines, text/image/video analysis,
-        CDNs, ad platforms, trading robots.
-        I prefer positions based on long-term commitment, ownership and research.
-        High-tech startups are welcome as well.
-     </p>
-     <p>I live in Moscow, Russia.
-        Both on-site and remote work (UTC+3) are possible.
-        Full time only.
-     </p>
-     <p><b>Important!</b>
-        Please, be sure to check my technical blog.
-        It demonstrates desired experience level and values by example.
-     </p>
+    <p>I create high-performance, algorithmically-complex server software.
+       My current focus is on scheduling algorithms for Huawei Cloud.
+       Previous experience includes full-text search engines and a number of startups.
+       I rely on C++/Linux as primary tech stack, followed by Python for prototyping and research.
+    </p>
   </div>
+
 
   <div class='skills'>
     <b>Skills:</b>
-    big data, distributed computing, storage,
-    data mining, machine learning, 24x7 online services, full-text search,
-    web crawling, multithreading, vectorization, networking;
-    project ownership. 
+    Distributed computing,
+    full-text search,
+    scheduling theory,
+    combinatorial optimization (packing problems),
+    performance optimization (multithreading, vectorization),
+    cloud internals,
+    network simulation,
+    classical ML,
+    technical leadership.
   </div>
 
   <div class='toolset'>
     <b>Toolset:</b>
-    <ul>
-      <li>C++, Boost, protobuf, rapidjson, OpenCV, libavcodec, flex, bison, x64/ARM SIMD,
-          arrow, parquet, roaring, openssl, cmake, gtest</li>
-      <li>Java, Hadoop, HBase, Spark, Kafka, nio, JNI, jdbc, fastutil, jetty</li>
-      <li>Python, NumPy, scikit, xgboost, TensorFlow, matplotlib</li>
-      <li>Linux A-Z</li>
-    </ul>
+    C++/Python/Java, Linux A-Z (I prefer Debian), ILP/SAT solvers, x86_64 SIMD,
+    Ascend NPU, arrow/parquet, protobuf, Hadoop, HBase, JNI, fastutil, nio.
   </div>
-
-  <div class='nonprod'>
-    Non-production experience: Altera Cyclone FPGA/SoC.
-  </div>
-
 </div>
 
 <div class='dontbreak'>
   <h2>Experience</h2>
   <table class='stretch header'>
     <tr>
-      <td class='position'>Backend architect (remotely)</td>
-      <td class='period'>2015 September &mdash; ongoing</td>
+      <td class='position'>Principal Researcher at Huawei</td>
+      <td class='period'>2020 Jan &mdash; ongoing</td>
     </tr>
   </table>
-  I work for bigdata and AI startups where I am responsible for core components.
-  Some interesting projects:
+  <div class='company'>
+    Research in the area of scheduling algorithms for Huawei Cloud (IaaS and AI training).
+  </div>
+  <ul>
+    <li>Created algorithms for VM consolidation, which reduce number of used hosts by up to 18.7% by live-migrating VMs.
+        NUMA-awareness, affinity/antiaffinty rules, migration duration prediction using QEMU counters.
+    </li>
+    <li>Created some core algorithms (scheduler, hotspot resolver, theoretical bounds) for CPU-overbooked scheduling
+        solution with guarantees on performance SLO.
+        Stochastic optimization, simulation of Linux CFS.
+    </li>
+    <li>Designed constraints for scheduling specific class of LLM training jobs into proprietary
+        FatTree-like network to ensure zero inter-job flow collisions.
+        Reduction in training time up to 4.5%.
+    </li>
+  </ul>
+
+  <small>
+  Publications:
+  <ul>
+    <li>"BalCon — resource balancing algorithm for VM consolidation", FGCS 2023 <a href='https://arxiv.org/abs/2309.11859'>&crarr;</a></li>
+    <li>"Hotspot-Aware Scheduling of Virtual Machines With Overcommitment for Ultimate Utilization in Cloud Datacenters", T-ASE 2024 <a href='https://doi.org/10.1109/TASE.2024.3454821'>&crarr;</a></li>
+    <li>"Hotspot resolution in cloud computing: A Γ-robust knapsack approach for virtual machine migration", JPDC 2024 <a href='https://doi.org/10.1016/j.jpdc.2023.104817'>&crarr;</a></li>
+  </ul>
+  </small>
+</div>
+
+<div class='dontbreak'>
+  <table class='stretch header'>
+    <tr>
+      <td class='position'>Backend architect (remotely)</td>
+      <td class='period'>2015 Sep &mdash; 2019 Dec</td>
+    </tr>
+  </table>
+  Worked remotely for bigdata and AI startups. Some interesting projects:
   <div style='margin-top:0.5em;'>
-    <a href='https://light.house/'>Lighthouse AI</a> &mdash; smart security cameras with robust object recognition
+    <b>Lighthouse AI</b> &mdash; smart security cameras with robust object recognition
     <ul>
       <li>Separate GPU nodes, data pipeline latency optimization,
           audio subsystem, metrics collection/monitoring.</li>
     </ul>
   </div>
   <div style='margin-top:0.5em;'>
-    <a href='http://dcengines.io/'>DCEngines</a> &mdash; low-level, distributed data store integrated with Apache Spark
+    <b>DCEngines</b> &mdash; low-level, distributed data store integrated with Apache Spark
     <ul>
       <li>String/substring indexes, parquet-based storage format,
           cluster API, unit and integration testing frameworks.</li>
     </ul>
   </div>
   <div style='margin-top:0.5em;'>
-    I also write job-related articles in my spare time (see my blog).
+    I also started to write job-related articles in my spare time (see my blog).
   </div>
 </div>
 
@@ -214,15 +228,15 @@
   <table class='stretch header'>
     <tr>
       <td class='position'>Lead Software Development Engineer at Deutsche Bank</td>
-      <td class='period'>2013 November &mdash; 2015 June</td>
+      <td class='period'>2013 Nov &mdash; 2015 Jun</td>
     </tr>
   </table>
   <div class='company'>
     Worked on hierarchical distributed database used for risk management.
   </div>
   <ul>
-    <li>Created embedded database client</li>
-    <li>Implemented a number of core features in a database, e.g. reference counting GC</li>
+    <li>Created database client embedded into in-grid calculations (network programming, context-dependent grammars parsing, complex object model)</li>
+    <li>Implemented reference counting GC that led to x2 reduction in weekly maintenance duration</li>
     <li>Latency/throughput/memory optimization of everything at all levels</li>
   </ul>
 </div>
@@ -230,34 +244,23 @@
 <div class='dontbreak'>
   <table class='stretch header'>
     <tr>
-      <td class='position'>Head of group of Vertical Searches at Mail.Ru Group</td>
-      <td class='period'>2011 September &mdash; 2013 June</td>
+      <td class='position'>Tech Lead of group of Vertical Searches at Mail.Ru Group (now VK)</td>
+      <td class='period'>2011 Sep &mdash; 2013 Jun</td>
     </tr>
   </table>
   <div class='company'>
-  Mail.Ru Group is the leading Internet company in Russia.
-  It operates public search engine <a href='https://go.mail.ru/'>go.mail.ru</a> among other services, 
-  which served 30 millions search queries daily as of 2013.
+  <small>[Go.mail.ru was the third-largest Russian web search engine with 30M search queries daily as of 2013]</small>
   </div>
+  Was responsible for development of all "vertical" search services.
+  Worked in close collaboration with PM, colleagues from UI, QA, devops and other specialized groups.
+  Major team achievements:
   <ul>
-    <li>Was responsible for development of all vertical search services.
-        Worked in close collaboration with PM, colleagues from UI, QA, devops and other specialized groups.
-        Major group achievements:
-      <ul>
-        <li>Created news vertical (1000+ sources, clustering, historical data)</li>
-        <li>Created people search over 300 million social network profiles</li>
-        <li>Created brand new version of video search</li>
-        <li>Added 15+ types of non-organic results and rich snippets to web search: 
-            goods, images, maps, music, news, video, weather, etc</li>
-        <li>Created SERP construction layer. 
-            Acts as a single point of building final SERP from large number of downstream sources.</li>
-      </ul>
-    </li>
-    <li>Personally made further improvements to image search.
-        User session analysis. Centralized dataflow in hadoop.</li>
+    <li>Created news search: 1000+ sources, clustering, archive, &le;5 min updates</li>
+    <li>Created search service over social profiles: 300M profiles, age-/geo- proximity ranking</li>
+    <li>Enriched web SERP with 15+ non-organic results: goods, images, music, news, video, weather</li>
+    <li>Personally worked on improving image search; added CTR-based ranking</li>
     <li>Owned 100 online servers with highly heterogeneous roles</li>
-    <li>Led team of 7 top-quality developers, conducted technical interviews</li>
-    <li><a href='https://gudok.xyz/portfolio/index.html#gmr'>Product screenshots</a></li>
+    <li>Led team of 7 developers, conducted technical interviews</li>
   </ul>
 </div>
 
@@ -265,17 +268,15 @@
   <table class='stretch header'>
     <tr>
       <td class='position'>Software Developer at Mail.Ru Group</td>
-      <td class='period'>2010 September &mdash; 2011 August</td>
+      <td class='period'>2010 Sep &mdash; 2011 Aug</td>
     </tr>
   </table>
   <div class='company'>
-  Owned image search (2,000,000 queries daily).
+  Owned image search (2M queries daily).
   </div>
   <ul>
-    <li>Restored, significantly reworked and extended image search.
-    <li>Achieved big improvements in size (300M effective db size) and quality of the dataset,
-        ranking, latency, reliability, architecture (sharding, thumbnail caching).
-    </li>
+    <li>Created indexing pipeline in Hadoop/HBase. Increased effective corpus size to 300M docs
+    <li>Migrated search backend to distributed architecture with sharding, replication and thumbnail serving farm
   </ul>
 </div>
 
@@ -283,22 +284,19 @@
   <table class='stretch header'>
     <tr>
       <td class='position'>Senior Software Developer at Nigma.Ru</td>
-      <td class='period'>2006 October &mdash; 2010 September</td>
+      <td class='period'>2006 Oct &mdash; 2010 Sep </td>
     </tr>
   </table>
   <div class='company'>
-  Nigma.Ru was a Russian metasearch engine with a variety of additional search and information services.
-  At its peak, it had 20 employees and processed 1% of search queries in Russia.
+  <small>[Nigma.Ru was a Russian metasearch engine with a variety of additional search services]</small>
   </div>
   <ul>
-    <li>Created music search engine over audio files accessible on the web.
-        Complete dataflow and backend: robot, storage, indexer, ranker, search engine.
-        Crawl set of 1 bln urls.
+    <li>Created and owned search engine over audio files accessible on the web.
+        This included complete dataflow and backend: robot (crawl set of 1 bln URLs), indexer, ranker, retriever,
+        clustering and data mining algorithms, etc
     </li>
-    <li>Created bittorrent search.
-    <li>Created set of components reused by adjacent projects: robots, parsers, full-text search engine</li>
-    <li>Led team of 3 developers, conducted technical interviews (devs and sysadmins)</li>
-    <li><a href='https://gudok.xyz/portfolio/index.html#ngm'>Product screenshots</a></li>
+    <li>Created a number of in-house components reused by adjacent projects: robot, HTML parser (30 MB/s), full-text search engine</li>
+    <li>Led team of 3 developers, conducted technical interviews</li>
   </ul>
 </div>
 
@@ -306,14 +304,13 @@
   <h2>Education</h2>
   <table class='stretch header'>
     <tr>
-      <td class='position'>Moscow State University</td>
+      <td class='position'>Lomonosov Moscow State University</td>
       <td class='period'>2004 &mdash; 2009</td>
     </tr>
   </table>
   Faculty of Computational Mathematics and Cybernetics
-  <br/>University degree (5 years)
+  <br/>University degree in Applied Mathematics and Computer Science
 </div>
 
 </body>
 <html>
-
