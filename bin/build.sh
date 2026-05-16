@@ -24,6 +24,7 @@ rsync -av --delete ~/GIT/articles/lxcdeb/mastercopy/ lxcdeb/
 rsync -av --delete ~/GIT/articles/mlp/mastercopy/ mlp/
 rsync -av --delete ~/GIT/articles/transpose/mastercopy/ transpose/
 rsync -av --delete ~/GIT/articles/partition/mastercopy/ partition/
+rsync -av --delete ~/GIT/articles/iter/mastercopy/ iter/
 bin/sitemap.py
 
 echo 'SUCCESS'
